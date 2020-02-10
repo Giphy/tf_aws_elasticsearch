@@ -96,6 +96,13 @@ resource "aws_elasticsearch_domain" "es_vpc" {
     },
     var.tags,
   )
+
+	lifecycle {
+		# Giphy only use-case for search to ignore cluster_config changes
+		ignore_changes = [
+			cluster_config
+		]
+	}
 }
 
 resource "aws_elasticsearch_domain_policy" "es_vpc_management_access" {

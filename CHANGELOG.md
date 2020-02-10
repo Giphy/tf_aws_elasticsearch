@@ -1,7 +1,10 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+<a name="v1.2.2"></a>
+## [v1.2.2] - 2020-02-10
 
+- added lifecycle `ignore_changes` for `instance_count` and `instance_type`
 
 <a name="v1.2.0"></a>
 ## [v1.2.0] - 2019-10-01
